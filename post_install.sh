@@ -32,7 +32,7 @@ npm run build
 service rtorrent start
 service rtorrent_flood start
 
-echo "When creating flood user, put socket directory as: /home/rtorrent/session/rtorrent.sock" > /root/PLUGIN_INFO
+echo "When creating flood user, put socket directory as: /config/.session/rtorrent.sock" > /root/PLUGIN_INFO
 
 # Define firewall rules
 sysrc -f /etc/rc.conf firewall_script="/etc/ipfw.rules"
