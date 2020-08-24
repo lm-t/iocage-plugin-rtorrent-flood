@@ -19,7 +19,7 @@ sysrc -f /etc/rc.conf rtorrent_flood_enable="YES"
 cd /home/rtorrent || exit 1
 
 # Download sources
-git clone https://github.com/Flood-UI/flood.git
+git clone https://github.com/jesec/flood.git
 cd flood || exit 1
 cp -rf /root/rtorrent/flood/* .
 
@@ -32,9 +32,7 @@ npm run build
 service rtorrent start
 service rtorrent_flood start
 
-echo "Flood ui credentials" > /root/PLUGIN_INFO
-echo "User: admin" >> /root/PLUGIN_INFO
-echo "Password: admin" >> /root/PLUGIN_INFO
+echo "When creating flood user, put socket directory as: /home/rtorrent/session/rtorrent.sock" > /root/PLUGIN_INFO
 
 # Define firewall rules
 sysrc -f /etc/rc.conf firewall_script="/etc/ipfw.rules"
