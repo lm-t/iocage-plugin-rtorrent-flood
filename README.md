@@ -1,27 +1,14 @@
 # iocage-plugin-rtorrent-flood
-
-Artifact file(s) for rTorrent Flood iocage plugin.
+Fork of the official rtorrent flood plugin with the following changes:
+* Use maintained fork of flood
+* Simplify mount points and ease of modification
 
 ## rTorrent
+Incomplete download dir: /torrents/incomplete
+Complete download dir: /torrents/complete
 
-Download directory: `/usr/home/rtorrent/download/`.
+Upon download completion files are moved from incomplete to complete dir
 
 ## Flood
 
-Default credentials :
-User : admin
-Password : admin
-
-## Test
-
-```sh
-iocage fetch -P --name rtorrent-flood.json dhcp=on --branch develop ip4_addr="bge0|10.141.1.100"
-```
-
-## OpenVPN
-
-Copy `openvpn.conf` and `pass.txt` to `/usr/local/etc/openvpn`.
-
-sysrc -f /etc/rc.conf openvpn_enable="YES"
-
-service openvpn start
+Upon opening the web-ui, select the socket path as /config/session/rtorrent.sock
