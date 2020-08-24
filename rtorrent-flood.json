@@ -1,7 +1,7 @@
 {
     "name": "rtorrent-flood",
     "release": "12.1-RELEASE",
-    "artifact": "https://github.com/pierrickrouxel/iocage-plugin-rtorrent-flood.git",
+    "artifact": "https://github.com/lynxcs/iocage-plugin-rtorrent-flood.git",
     "pkgs": [
         "tmux",
         "rtorrent",
