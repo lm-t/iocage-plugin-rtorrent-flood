@@ -2,7 +2,8 @@
 
 pw useradd rtorrent -g 0 -m
 
-mv /root/.rtorrent.rc /home/rtorrent/.rtorrent.rc
+mv /root/.rtorrent.rc /config/rtorrent.rc
+ln -s /config/rtorrent.rc /home/rtorrent/.rtorrent.rc
 
 npm install -g npm
 npm install -g forever
@@ -33,6 +34,3 @@ service rtorrent start
 service rtorrent_flood start
 
 echo "When creating flood user, put socket directory as: /config/.session/rtorrent.sock" > /root/PLUGIN_INFO
-
-# Define firewall rules
-sysrc -f /etc/rc.conf firewall_script="/etc/ipfw.rules"
