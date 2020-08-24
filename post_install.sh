@@ -4,6 +4,7 @@ pw useradd rtorrent -g 0 -m
 
 mv /root/.rtorrent.rc /home/rtorrent/.rtorrent.rc
 
+npm install -g npm
 npm install -g forever
 
 # rTorrent startup script
@@ -34,9 +35,6 @@ service rtorrent_flood start
 echo "Flood ui credentials" > /root/PLUGIN_INFO
 echo "User: admin" >> /root/PLUGIN_INFO
 echo "Password: admin" >> /root/PLUGIN_INFO
-
-# OpenVPN directory
-mkdir /usr/local/etc/openvpn
 
 # Define firewall rules
 sysrc -f /etc/rc.conf firewall_script="/etc/ipfw.rules"
