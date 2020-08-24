@@ -4,8 +4,9 @@ Fork of the official rtorrent flood plugin with the following changes:
 * Simplify mount points and ease of modification
 
 ## rTorrent
-Incomplete download dir: /torrents/incomplete
-Complete download dir: /torrents/complete
+* Config directory: /config
+* Incomplete download dir: /torrents/incomplete
+* Complete download dir: /torrents/complete
 
 Upon download completion files are moved from incomplete to complete dir
 
