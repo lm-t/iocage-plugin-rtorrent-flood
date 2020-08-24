@@ -1,5 +1,5 @@
 {
-    "name": "rtorrent-flood",
+    "name": "rtorrent",
     "release": "12.1-RELEASE",
     "artifact": "https://github.com/lynxcs/iocage-plugin-rtorrent-flood.git",
     "pkgs": [
