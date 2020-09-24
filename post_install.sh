@@ -20,7 +20,7 @@ sysrc -f /etc/rc.conf rtorrent_flood_enable="YES"
 cd /home/rtorrent || exit 1
 
 # Download sources
-git clone https://github.com/jesec/flood.git
+git clone https://github.com/jesec/flood.git --branch v3.1.0
 cd flood || exit 1
 cp -rf /root/rtorrent/flood/* .
 
