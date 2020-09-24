@@ -3,6 +3,9 @@ Fork of the official rtorrent flood plugin with the following changes:
 * Use maintained fork of flood
 * Simplify mount points and ease of modification
 
+## Install
+iocage fetch -P rtorrent.json dhcp=on --branch master
+
 ## rTorrent
 * Config directory: /config
 * Incomplete download dir: /torrents/incomplete
