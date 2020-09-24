@@ -15,7 +15,7 @@
         "allow_tun": 1,
         "dhcp": 1
     },
-    "packagesite": "http://pkg.FreeBSD.org/${ABI}/quarterly",
+    "packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
     "fingerprints": {
         "iocage-plugins": [
             {
