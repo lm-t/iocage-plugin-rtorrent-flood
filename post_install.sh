@@ -7,8 +7,7 @@ mkdir /config
 mv /root/.rtorrent.rc /config/rtorrent.rc
 ln -s /config/rtorrent.rc /home/rtorrent/.rtorrent.rc
 
-npm install -g npm
-npm install -g forever
+npm install -g npm forever typescript ts-node
 
 # rTorrent startup script
 chmod 555 /usr/local/etc/rc.d/rtorrent
@@ -22,14 +21,14 @@ sysrc -f /etc/rc.conf rtorrent_flood_enable="YES"
 cd /home/rtorrent || exit 1
 
 # Download sources
-git clone https://github.com/jesec/flood.git --branch v3.1.0
+git clone https://github.com/jesec/flood.git
 cd flood || exit 1
 cp -rf /root/rtorrent/flood/* .
 
 chown -R rtorrent /home/rtorrent
 
-npm install
-npm run build
+sudo -u rtorrent npm install
+sudo -u rtorrent npm run build
 
 # Start the service
 service rtorrent start
