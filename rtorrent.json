@@ -11,6 +11,8 @@
         "npm"
     ],
     "properties": {
+        "nat_forwards": "tcp(80:80)",
+        "nat": 1,
         "allow_raw_sockets": 1,
         "allow_tun": 1,
         "dhcp": 1
