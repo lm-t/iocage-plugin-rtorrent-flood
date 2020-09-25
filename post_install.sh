@@ -7,7 +7,9 @@ mkdir /config
 mv /root/.rtorrent.rc /config/rtorrent.rc
 ln -s /config/rtorrent.rc /home/rtorrent/.rtorrent.rc
 
-npm install -g npm forever typescript ts-node
+npm install -g npm typescript ts-node pm2
+pm2 update
+pm2 install typescript
 
 # rTorrent startup script
 chmod 555 /usr/local/etc/rc.d/rtorrent
@@ -29,6 +31,7 @@ chown -R rtorrent /home/rtorrent
 
 sudo -u rtorrent npm install
 sudo -u rtorrent npm run build
+
 
 # Start the service
 service rtorrent start
