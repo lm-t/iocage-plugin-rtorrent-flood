@@ -29,8 +29,8 @@ cp -rf /root/rtorrent/flood/* .
 
 chown -R rtorrent /home/rtorrent
 
-sudo -u rtorrent npm install
-sudo -u rtorrent npm run build
+npm install
+npm run build
 
 
 # Start the service
