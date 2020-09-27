@@ -38,4 +38,6 @@ npm run build
 service rtorrent start
 service rtorrent_flood start
 
+npm install -g yargs
+
 echo "When creating flood user, put socket directory as: /config/.session/rtorrent.sock" > /root/PLUGIN_INFO
