@@ -3,6 +3,7 @@
 pw useradd rtorrent -g 0 -m
 
 mkdir /config
+chown rtorrent /config
 
 mv /root/.rtorrent.rc /config/rtorrent.rc
 ln -s /config/rtorrent.rc /home/rtorrent/.rtorrent.rc
