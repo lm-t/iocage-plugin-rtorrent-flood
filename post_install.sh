@@ -8,7 +8,7 @@ chown rtorrent /config
 mv /root/.rtorrent.rc /config/rtorrent.rc
 ln -s /config/rtorrent.rc /home/rtorrent/.rtorrent.rc
 
-npm install -g npm typescript ts-node pm2 yargs
+npm install npm typescript ts-node pm2 yargs
 pm2 update
 pm2 install typescript
 
