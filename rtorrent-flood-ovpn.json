@@ -16,7 +16,7 @@
         "allow_raw_sockets": 1,
         "allow_tun": 1
     },
-    "packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
+    "packagesite": "http://pkg.FreeBSD.org/${ABI}/quarterly",
     "fingerprints": {
         "iocage-plugins": [
             {
